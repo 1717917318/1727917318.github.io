@@ -1,1 +1,1 @@
-Hello world2!
+document.write('Hello World2');
