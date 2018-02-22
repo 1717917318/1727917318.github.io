@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>this is title</title>
-</head> 
+
+
+
+    <script>
+        function  check() {
+            var password=document.getElementById("password").value;
+            if(password=="123") {
+                alert("succcecss!")
+            } else {
+                alert("failed!");
+                document.getElementById("password").value='';
+            }
+        }
+    </script>
+
+
+</head>
+
     <p>
         首页
-        网站建设中。。。
     </p>
+
     <p>
         <script type="text/javascript">
             document.write("Hello World!");
@@ -16,14 +33,25 @@
         <script  type="text/javascript" src="./main.js"> </script>
     </p>
 
+
+    <div>
+        <input type="text" id="username" placeholder="username" > <br/>
+        <input type="password" id="password" placeholder="password" >
+    </div>
+
+    <button id="submit"  onclick="check()">Login</button>
+ 
+    <p>
+        ---------------------------------------------
+    </p> 
+
     <form>
 
-    <input type="text" id="input_id"  /> <br>
-
-    <input type="password" id="input_pas" />  <br>
-
-    <button type="submit" formaction="./check.js" >login </button>
-
+        <input type="text" id="input_id"  /> <br>
+    
+        <input type="password" id="input_pas" />  <br>
+    
+        <button type="submit" formaction="./check.js" >login </button>
 
     </form>
 
